@@ -1,0 +1,49 @@
+:root {
+    /* Couleurs — fond clair, un seul accent fort */
+    --bg: #F7F8FA;
+    --bg-soft: #EFF1F5;
+    --surface: #FFFFFF;
+    --border: #E3E6EC;
+    --border-strong: #CBD1DC;
+
+    --text-primary: #14161B;
+    --text-secondary: #565D6B;
+    --text-muted: #8A90A0;
+
+    --accent: #2C4BF6;       /* bleu indigo — technique, sobre */
+    --accent-dark: #1E36C4;
+    --accent-soft: #EEF1FF;  /* fond très clair pour tags/highlights */
+    --accent-teal: #0E9488;  /* touche secondaire, utilisée avec parcimonie */
+
+    /* Typographie */
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Échelle typographique */
+    --fs-xs: 0.8rem;
+    --fs-sm: 0.9rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.15rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.75rem;
+
+    /* Espacements */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 3rem;
+    --space-6: 5rem;
+
+    /* Divers */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --shadow-sm: 0 1px 3px rgba(20, 22, 27, 0.06);
+    --shadow-md: 0 8px 24px rgba(20, 22, 27, 0.08);
+    --shadow-lg: 0 20px 40px rgba(20, 22, 27, 0.10);
+    --max-width: 1120px;
+    --transition: 0.25s ease;
+}

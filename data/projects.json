@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Plateforme d'Annotation Collaborative NLP",
+    "description": "Application Spring Boot pour l'annotation manuelle de datasets NLP par plusieurs annotateurs : gestion des rôles admin/annotateur, calcul du taux d'accord inter-annotateurs (Cohen's Kappa, Fleiss' Kappa), détection automatique des spammeurs, export des résultats, et lancement de l'entraînement/test de modèles NLP directement depuis l'interface.",
+    "tags": ["Spring Boot", "Thymeleaf", "Spring Security", "Hibernate", "H2", "Python", "NLP"],
+    "github": "https://github.com/sara-alioui/annotation-app",
+    "demo": "https://drive.google.com/file/d/16KsVzPaeR6tf-ye-A_Ay_YHBSibzw_UT/view?usp=sharing",
+    "image": ""
+  },
+  {
+    "title": "Gestion des Bons de Commande — Al Omrane",
+    "description": "Application web développée durant mon stage de fin d'études au Groupe Al Omrane (Service Contrôle de Gestion). Elle centralise la saisie des bons de commande, contrôle automatiquement le respect des plafonds budgétaires par ordonnateur, et formalise un circuit de validation hiérarchique à 4 niveaux (Directeur d'Agence, DTI, Contrôle de Gestion, DGA, DG) avec génération de documents PDF/Excel et tableau de bord de consommation budgétaire.",
+    "tags": ["React", "Node.js", "Express", "Prisma", "MySQL", "JWT"],
+    "github": "https://github.com/sara-alioui/bc-app",
+    "demo": "",
+    "image": ""
+  },
+  {
+    "title": "Book Summarizer — Résumé de livres par IA",
+    "description": "Projet de deep learning pour la génération automatique de résumés de livres, basé sur le fine-tuning du modèle Pegasus pour la summarization abstractive de textes longs.",
+    "tags": ["Python", "Deep Learning", "NLP", "Pegasus", "Fine-tuning"],
+    "github": "https://github.com/sara-alioui/book-summarizer",
+    "demo": "",
+    "image": ""
+  },
+  {
+    "title": "Pipeline de Procurement — Réapprovisionnement Automatisé",
+    "description": "Pipeline de données distribué (Big Data) pour un système de réapprovisionnement automatique en grande distribution : ingestion des commandes et stocks via HDFS, calcul du besoin net (net demand) avec Trino, puis génération automatique des commandes fournisseurs optimisées.",
+    "tags": ["Python", "Hadoop/HDFS", "Trino", "PostgreSQL", "Docker"],
+    "github": "https://github.com/sara-alioui/procurement-pipeline-project",
+    "demo": "",
+    "image": ""
+  },
+  {
+    "title": "Task Manager",
+    "description": "Application de gestion de tâches développée lors d'un stage d'initiation chez Infosat (Agadir) : authentification JWT, gestion des utilisateurs et des groupes, tableau de bord admin et suivi des tâches en temps réel.",
+    "tags": ["React", "Material UI", "Node.js", "Express", "OracleDB", "JWT"],
+    "github": "https://github.com/sara-alioui/task-manager",
+    "demo": "",
+    "image": ""
+  },
+  {
+    "title": "Système de Gestion Étudiants",
+    "description": "Application développée en équipe avec architecture MVC pour la gestion académique en temps réel : notes, présences et communication inter-étudiants.",
+    "tags": ["Java", "MySQL", "JavaFX", "MVC", "API REST"],
+    "github": "https://github.com/sara-alioui",
+    "demo": "",
+    "image": ""
+  },
+  {
+    "title": "IA d'Analyse de Sentiments",
+    "description": "Système de traitement du langage naturel pour la classification et l'analyse de sentiments à partir de textes issus de communications digitales.",
+    "tags": ["Python", "Pandas", "NLP", "Scikit-learn"],
+    "github": "https://github.com/sara-alioui",
+    "demo": "",
+    "image": ""
+  }
+]
