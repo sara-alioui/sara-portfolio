@@ -1,49 +1,47 @@
 :root {
-    /* Couleurs — fond clair, un seul accent fort */
-    --bg: #F7F8FA;
-    --bg-soft: #EFF1F5;
-    --surface: #FFFFFF;
-    --border: #E3E6EC;
-    --border-strong: #CBD1DC;
+    --bg: #0a0d18;
+    --bg-soft: #101526;
+    --surface: rgba(18, 23, 40, 0.78);
+    --surface-strong: #151b30;
+    --surface-soft: rgba(255, 255, 255, 0.045);
+    --border: rgba(255, 255, 255, 0.09);
+    --border-strong: rgba(255, 255, 255, 0.16);
 
-    --text-primary: #14161B;
-    --text-secondary: #565D6B;
-    --text-muted: #8A90A0;
+    --text-primary: #f7f8ff;
+    --text-secondary: #b8bfd3;
+    --text-muted: #7e879d;
 
-    --accent: #2C4BF6;       /* bleu indigo — technique, sobre */
-    --accent-dark: #1E36C4;
-    --accent-soft: #EEF1FF;  /* fond très clair pour tags/highlights */
-    --accent-teal: #0E9488;  /* touche secondaire, utilisée avec parcimonie */
+    --pink: #ff72b6;
+    --pink-soft: rgba(255, 114, 182, 0.13);
+    --sky: #75d9ff;
+    --sky-soft: rgba(117, 217, 255, 0.12);
+    --accent: #75d9ff;
+    --accent-dark: #4bc6f1;
 
-    /* Typographie */
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
-    /* Échelle typographique */
-    --fs-xs: 0.8rem;
+    --fs-xs: 0.76rem;
     --fs-sm: 0.9rem;
     --fs-base: 1rem;
-    --fs-lg: 1.15rem;
-    --fs-xl: 1.5rem;
-    --fs-2xl: 2rem;
-    --fs-3xl: 2.75rem;
+    --fs-lg: 1.1rem;
+    --fs-xl: 1.45rem;
+    --fs-2xl: clamp(2rem, 4vw, 3.1rem);
+    --fs-3xl: clamp(3.2rem, 8vw, 6.9rem);
 
-    /* Espacements */
     --space-1: 0.5rem;
     --space-2: 1rem;
     --space-3: 1.5rem;
     --space-4: 2rem;
     --space-5: 3rem;
-    --space-6: 5rem;
+    --space-6: 6rem;
 
-    /* Divers */
-    --radius-sm: 8px;
-    --radius-md: 14px;
-    --radius-lg: 20px;
-    --shadow-sm: 0 1px 3px rgba(20, 22, 27, 0.06);
-    --shadow-md: 0 8px 24px rgba(20, 22, 27, 0.08);
-    --shadow-lg: 0 20px 40px rgba(20, 22, 27, 0.10);
-    --max-width: 1120px;
-    --transition: 0.25s ease;
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 28px;
+    --shadow-glow: 0 0 80px rgba(117, 217, 255, 0.08);
+    --shadow-pink: 0 18px 60px rgba(255, 114, 182, 0.14);
+    --max-width: 1180px;
+    --transition: 0.28s ease;
 }

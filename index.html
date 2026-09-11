@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Alioui — Data Engineer</title>
-    <meta name="description" content="Portfolio de Sara Alioui, étudiante en Data Engineering à l'ENSAH.">
+    <meta name="theme-color" content="#0a0d18">
+    <title>Sara Alioui — Data Engineering Student</title>
+    <meta name="description" content="Portfolio de Sara Alioui, étudiante en Ingénierie des Données à l'ENSAH, orientée Data Engineering, Big Data et Machine Learning.">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,55 +18,74 @@
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="navbar-inner">
-            <a href="#home" class="logo">Sara<span>.</span>Alioui</a>
-            <nav class="nav-links">
-                <a href="#home">Accueil</a>
-                <a href="#about">À propos</a>
-                <a href="#skills">Compétences</a>
-                <a href="#projects">Projets</a>
-                <a href="#education">Formation</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button class="nav-toggle" aria-label="Ouvrir le menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="#home" class="logo">Sara<span>.</span>Alioui</a>
 
-    <main>
-        <!-- Accueil -->
-        <section id="home" class="hero container">
-            <div class="hero-content reveal">
-                <p class="eyebrow">Data Engineer</p>
-                <h1 class="section-title" style="font-size: var(--fs-3xl); margin-bottom: var(--space-2);">
-                    Sara Alioui
-                </h1>
-                <p style="max-width: 480px; font-size: var(--fs-lg);">
-                    Étudiante en Data Engineering à l'ENSAH, je conçois des pipelines de données
-                    et des solutions d'intelligence artificielle pour transformer des données
-                    complexes en décisions concrètes.
-                </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Me contacter
-                    </a>
-                    <a href="assets/cv/CV_Sara_Alioui.pdf" target="_blank" class="btn btn-outline">
-                        <i class="fas fa-download"></i> Télécharger le CV
-                    </a>
-                </div>
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#education">Formation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section id="home" class="hero container">
+        <div class="hero-content reveal">
+            <p class="hero-kicker">Data Engineering · Big Data · Machine Learning</p>
+
+            <h1 class="hero-title">
+                Je construis des solutions<br>
+                <span class="gradient">à partir des données.</span>
+            </h1>
+
+            <p class="hero-description">
+                Je suis Sara Alioui, étudiante en Ingénierie des Données à l'ENSAH.
+                Je m'intéresse aux pipelines de données, aux systèmes distribués
+                et aux solutions intelligentes qui transforment des données brutes
+                en informations utiles.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    Voir mes projets <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="assets/cv/CV_Sara_Alioui.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+                    <i class="fas fa-file-lines"></i> Voir mon CV
+                </a>
             </div>
 
-            <div class="profile-card reveal">
+            <div class="hero-meta">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Spark</span>
+                <span>Kafka</span>
+                <span>Docker</span>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="hero-orbit" aria-hidden="true"></div>
+
+            <div class="profile-card">
                 <img src="assets/images/profile.jpg" alt="Photo de Sara Alioui" class="profile-avatar">
                 <h3>Sara Alioui</h3>
-                <p class="profile-role">Data Engineer · ENSAH</p>
+                <p class="profile-role">Ingénierie des Données · ENSAH</p>
+
                 <div class="social-row">
-                    <a href="https://github.com/sara-alioui" target="_blank" class="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/sara-alioui" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/sara-alioui-9b983431a/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/sara-alioui-9b983431a/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:saraalioui80@gmail.com" class="social-icon" aria-label="Email">
@@ -73,265 +93,257 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- À propos -->
-        <section id="about" class="container">
-            <p class="eyebrow reveal">À propos</p>
-            <h2 class="section-title reveal">Qui je suis</h2>
-            <p class="section-subtitle reveal">Ce qui me motive et où j'en suis aujourd'hui.</p>
+    <section id="about" class="container">
+        <p class="eyebrow reveal">01 · À propos</p>
+        <h2 class="section-title reveal">Un profil orienté données.</h2>
+        <p class="section-subtitle reveal">
+            Mon objectif est de comprendre la donnée de bout en bout : ingestion,
+            traitement, stockage, analyse et valorisation.
+        </p>
 
-            <div class="grid-2">
-                <div class="card reveal">
-                    <h3 style="margin-bottom: var(--space-2);">Ma démarche</h3>
-                    <p style="margin-bottom: var(--space-2);">
-                        Étudiante en Data Engineering à l'ENSAH, j'explore les données pour en
-                        extraire des informations utiles et construire des solutions d'IA fiables.
-                    </p>
-                    <p>
-                        Je m'intéresse particulièrement aux algorithmes d'apprentissage automatique
-                        et aux architectures de données distribuées, avec le souci de livrer des
-                        systèmes robustes et bien pensés.
-                    </p>
-                </div>
-
-                <div class="stats-grid reveal">
-                    <div class="stat-box">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Projets réalisés</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Années d'étude</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Technologies</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">2</div>
-                        <div class="stat-label">Langues techniques</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Compétences -->
-        <section id="skills" class="container">
-            <p class="eyebrow reveal">Compétences</p>
-            <h2 class="section-title reveal">Ce que je maîtrise</h2>
-            <p class="section-subtitle reveal">Les outils avec lesquels je travaille le plus souvent.</p>
-
-            <div class="key-skills reveal">
-                <span class="key-skill">Python</span>
-                <span class="key-skill">SQL</span>
-                <span class="key-skill">Apache Spark</span>
-                <span class="key-skill">Kafka</span>
-                <span class="key-skill">Java</span>
-                <span class="key-skill">Spring Boot</span>
+        <div class="grid-2">
+            <div class="card reveal">
+                <h3 style="margin-bottom: .75rem;">Ma démarche</h3>
+                <p style="margin-bottom: .9rem;">
+                    Étudiante en Ingénierie des Données à l'ENSAH, je développe mes compétences
+                    à travers des projets concrets en Data Engineering, Big Data, développement
+                    logiciel et Machine Learning.
+                </p>
+                <p>
+                    J'aime particulièrement travailler sur des architectures distribuées,
+                    automatiser les traitements et comprendre comment rendre les données
+                    réellement exploitables.
+                </p>
             </div>
 
-            <div class="skills-simple reveal">
-                <div class="skill-row">
-                    <span class="skill-row-label">Langages</span>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">C</span>
-                        <span class="tag">R</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">PHP</span>
-                    </div>
+            <div class="stats-grid reveal">
+                <div class="stat-box">
+                    <div class="stat-number">Data</div>
+                    <div class="stat-label">Domaine principal</div>
                 </div>
-                <div class="skill-row">
-                    <span class="skill-row-label">Big Data</span>
-                    <div class="tags">
-                        <span class="tag">Apache Spark</span>
-                        <span class="tag">Kafka</span>
-                        <span class="tag">Flink</span>
-                        <span class="tag">Airflow</span>
-                        <span class="tag">Trino</span>
-                        <span class="tag">HDFS</span>
-                        <span class="tag">Hive</span>
-                        <span class="tag">Docker</span>
-                    </div>
+                <div class="stat-box">
+                    <div class="stat-number">Big Data</div>
+                    <div class="stat-label">Systèmes distribués</div>
                 </div>
-                <div class="skill-row">
-                    <span class="skill-row-label">ETL / BI</span>
-                    <div class="tags">
-                        <span class="tag">Talend</span>
-                        <span class="tag">Informatica</span>
-                        <span class="tag">Power BI</span>
-                        <span class="tag">Grafana</span>
-                    </div>
+                <div class="stat-box">
+                    <div class="stat-number">ML</div>
+                    <div class="stat-label">Intelligence artificielle</div>
                 </div>
-                <div class="skill-row">
-                    <span class="skill-row-label">Bases de données</span>
-                    <div class="tags">
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Oracle SQL</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Cassandra</span>
-                        <span class="tag">MinIO (S3)</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-row-label">ML / NLP</span>
-                    <div class="tags">
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">NumPy</span>
-                        <span class="tag">HuggingFace Transformers</span>
-                        <span class="tag">FAISS</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <span class="skill-row-label">Outils</span>
-                    <div class="tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">MATLAB</span>
-                        <span class="tag">Scilab</span>
-                        <span class="tag">LINGO</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projets -->
-        <section id="projects" class="container">
-            <p class="eyebrow reveal">Projets</p>
-            <h2 class="section-title reveal">Ce que j'ai construit</h2>
-            <p class="section-subtitle reveal">
-                Clique sur une carte pour voir tous les détails et les photos du projet.
-            </p>
-
-            <div id="projects-grid" class="projects-grid">
-                <!-- Généré dynamiquement par js/projects.js à partir de data/projects.json -->
-            </div>
-        </section>
-
-        <!-- Modal détail projet -->
-        <div id="project-modal" class="modal-overlay">
-            <div class="modal-box">
-                <button class="modal-close" id="modal-close" aria-label="Fermer">
-                    <i class="fas fa-xmark"></i>
-                </button>
-                <div id="modal-gallery" class="modal-gallery"></div>
-                <div class="modal-body">
-                    <h3 id="modal-title"></h3>
-                    <div id="modal-tags" class="tags" style="margin: var(--space-2) 0;"></div>
-                    <p id="modal-description"></p>
-                    <div id="modal-links" class="modal-links"></div>
+                <div class="stat-box">
+                    <div class="stat-number">ENSAH</div>
+                    <div class="stat-label">Ingénierie des Données</div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Formation -->
-        <section id="education" class="container">
-            <p class="eyebrow reveal">Formation</p>
-            <h2 class="section-title reveal">Parcours académique</h2>
-            <p class="section-subtitle reveal">Les étapes qui ont construit mon profil.</p>
+    <section id="skills" class="container">
+        <p class="eyebrow reveal">02 · Compétences</p>
+        <h2 class="section-title reveal">Mon stack technique.</h2>
+        <p class="section-subtitle reveal">
+            Les technologies utilisées dans mes projets académiques et personnels.
+        </p>
 
-            <div class="timeline">
-                <div class="timeline-entry reveal">
-                    <span class="timeline-date">2024 — en cours</span>
-                    <h3>Ingénierie des Données</h3>
-                    <p class="timeline-school">École Nationale des Sciences Appliquées d'Al-Hoceima</p>
-                    <p>Formation spécialisée en ingénierie des données, intelligence artificielle,
-                        analyse de données massives et systèmes d'apprentissage automatique.</p>
-                </div>
+        <div class="key-skills reveal">
+            <span class="key-skill">Python</span>
+            <span class="key-skill">SQL</span>
+            <span class="key-skill">Apache Spark</span>
+            <span class="key-skill">Kafka</span>
+            <span class="key-skill">Airflow</span>
+            <span class="key-skill">Docker</span>
+        </div>
 
-                <div class="timeline-entry reveal">
-                    <span class="timeline-date">2022 — 2024</span>
-                    <h3>Classes Préparatoires Intégrées</h3>
-                    <p class="timeline-school">École Nationale des Sciences Appliquées d'Al-Hoceima</p>
-                    <p>Cursus renforcé en mathématiques, physique, informatique théorique et algorithmique.</p>
-                </div>
-
-                <div class="timeline-entry reveal">
-                    <span class="timeline-date">2021 — 2022</span>
-                    <h3>Baccalauréat Sciences Mathématiques B</h3>
-                    <p class="timeline-school">Lycée d'Excellence</p>
-                    <p>Spécialisation en mathématiques supérieures et sciences physiques.</p>
+        <div class="skills-simple reveal">
+            <div class="skill-row">
+                <span class="skill-row-label">Data Engineering</span>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Spark</span>
+                    <span class="tag">PySpark</span><span class="tag">Kafka</span><span class="tag">Airflow</span>
+                    <span class="tag">Hadoop</span><span class="tag">HDFS</span><span class="tag">Hive</span><span class="tag">Trino</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Contact -->
-        <section id="contact" class="container">
-            <p class="eyebrow reveal">Contact</p>
-            <h2 class="section-title reveal">Discutons</h2>
-            <p class="section-subtitle reveal">N'hésite pas à me contacter pour un projet ou une opportunité.</p>
+            <div class="skill-row">
+                <span class="skill-row-label">Bases de données</span>
+                <div class="tags">
+                    <span class="tag">PostgreSQL</span><span class="tag">Oracle</span><span class="tag">MongoDB</span>
+                    <span class="tag">MySQL</span><span class="tag">Cassandra</span><span class="tag">MinIO</span>
+                </div>
+            </div>
 
-            <div class="contact-layout">
-                <div class="reveal">
-                    <div class="contact-list">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>saraalioui80@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <p>+212 621617192</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>Fès, Maroc</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p>sara-alioui-9b983431a</p>
-                            </div>
-                        </div>
+            <div class="skill-row">
+                <span class="skill-row-label">Programmation</span>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C</span>
+                    <span class="tag">JavaScript</span><span class="tag">PHP</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-row-label">ML / NLP</span>
+                <div class="tags">
+                    <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span>
+                    <span class="tag">Hugging Face</span><span class="tag">NLP</span><span class="tag">FAISS</span>
+                </div>
+            </div>
+
+            <div class="skill-row">
+                <span class="skill-row-label">Outils</span>
+                <div class="tags">
+                    <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Docker</span>
+                    <span class="tag">Power BI</span><span class="tag">Grafana</span><span class="tag">Talend</span>
+                    <span class="tag">Informatica</span><span class="tag">MATLAB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <p class="eyebrow reveal">03 · Projets</p>
+        <h2 class="section-title reveal">Des projets, pas seulement des technologies.</h2>
+        <p class="section-subtitle reveal">
+            Une sélection de travaux où j'ai mis en pratique la Data Engineering,
+            les systèmes distribués, le développement et le Machine Learning.
+        </p>
+
+        <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+    <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Fermer">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div id="modal-gallery" class="modal-gallery"></div>
+            <div class="modal-body">
+                <p id="modal-type" class="project-type"></p>
+                <h3 id="modal-title"></h3>
+                <div id="modal-tags" class="tags" style="margin: .9rem 0;"></div>
+                <p id="modal-description"></p>
+                <div id="modal-highlights" style="margin-top: 1rem;"></div>
+                <div id="modal-links" class="modal-links"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="education" class="container">
+        <p class="eyebrow reveal">04 · Formation</p>
+        <h2 class="section-title reveal">Mon parcours académique.</h2>
+        <p class="section-subtitle reveal">Une formation scientifique qui m'a amenée vers l'ingénierie des données.</p>
+
+        <div class="timeline">
+            <div class="timeline-entry reveal">
+                <span class="timeline-date">2024 — en cours</span>
+                <h3>Ingénierie des Données</h3>
+                <p class="timeline-school">École Nationale des Sciences Appliquées d'Al-Hoceima · ENSAH</p>
+                <p>Formation en Data Engineering, Big Data, bases de données, systèmes distribués, intelligence artificielle et développement logiciel.</p>
+            </div>
+
+            <div class="timeline-entry reveal">
+                <span class="timeline-date">2022 — 2024</span>
+                <h3>Classes Préparatoires Intégrées</h3>
+                <p class="timeline-school">École Nationale des Sciences Appliquées d'Al-Hoceima</p>
+                <p>Mathématiques, physique, algorithmique, programmation et fondements scientifiques de l'ingénierie.</p>
+            </div>
+
+            <div class="timeline-entry reveal">
+                <span class="timeline-date">2021 — 2022</span>
+                <h3>Baccalauréat Sciences Mathématiques B</h3>
+                <p class="timeline-school">Lycée d'Excellence</p>
+                <p>Parcours scientifique orienté mathématiques et sciences physiques.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <p class="eyebrow reveal">05 · Contact</p>
+        <h2 class="section-title reveal">Une opportunité ? Parlons-en.</h2>
+        <p class="section-subtitle reveal">
+            Pour un stage, un PFE, un projet Data Engineering ou une collaboration,
+            vous pouvez m'écrire directement depuis ce formulaire.
+        </p>
+
+        <div class="contact-layout">
+            <div class="reveal">
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div><h4>Email</h4><p>saraalioui80@gmail.com</p></div>
                     </div>
-                    <a href="assets/cv/CV_Sara_Alioui.pdf" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Télécharger le CV
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div><h4>Téléphone</h4><p>+212 621617192</p></div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                        <div><h4>Localisation</h4><p>Fès, Maroc</p></div>
+                    </div>
+
+                    <a href="https://www.linkedin.com/in/sara-alioui-9b983431a/" target="_blank" rel="noopener" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div><h4>LinkedIn</h4><p>Voir mon profil</p></div>
                     </a>
                 </div>
 
-                <form id="contact-form" class="card reveal">
-                    <div class="form-field">
-                        <label for="name" class="form-label">Nom complet</label>
-                        <input type="text" id="name" class="form-input" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-input" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="subject" class="form-label">Sujet</label>
-                        <input type="text" id="subject" class="form-input" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-input" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                        <i class="fas fa-paper-plane"></i> Envoyer le message
-                    </button>
-                </form>
+                <a href="assets/cv/CV_Sara_Alioui.pdf" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 1rem;">
+                    <i class="fas fa-file-pdf"></i> Consulter le CV
+                </a>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        © 2026 Sara Alioui — Construit avec soin.
-    </footer>
+            <form
+                id="contact-form"
+                class="card reveal"
+                action="https://formsubmit.co/saraalioui80@gmail.com"
+                method="POST"
+            >
+                <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Sara Alioui">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://sara-alioui.github.io/sara-portfolio/#contact">
 
-    <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/projects.js"></script>
+                <div class="form-field">
+                    <label for="name" class="form-label">Nom complet</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email" class="form-label">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="vous@example.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="subject" class="form-label">Sujet</label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="Stage, PFE, opportunité..." required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-input" placeholder="Votre message..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+
+                <p class="form-note">
+                    Vos informations seront utilisées uniquement pour répondre à votre message.
+                </p>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Sara Alioui — Data Engineering · Big Data · Machine Learning
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/projects.js"></script>
 </body>
 </html>
