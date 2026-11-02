@@ -1,26 +1,78 @@
 [
   {
+    "title": "JobSpark — Pipeline ETL de recommandation d'emplois",
+    "type": "Data Engineering · ETL",
+    "description": "Pipeline ETL automatisé orchestré avec Apache Airflow : collecte d'offres d'emploi sur plusieurs sources, nettoyage et transformation, puis chargement dans un Data Warehouse PostgreSQL exposé par une API et des tableaux de bord Power BI.",
+    "highlights": [
+      "DAG Airflow de 11 tâches",
+      "Collecte sur 4 sources de données",
+      "Nettoyage et transformation des données",
+      "Data Warehouse PostgreSQL (2 800+ offres)",
+      "Exposition via une API Flask et dashboards Power BI"
+    ],
+    "tags": [
+      "Apache Airflow",
+      "Python",
+      "PostgreSQL",
+      "Flask",
+      "Power BI"
+    ],
+    "github": "",
+    "demo": "",
+    "image": "assets/images/projects/jobspark.svg",
+    "category": "data",
+    "imageAlt": "Graphe de tâches Airflow du pipeline JobSpark"
+  },
+  {
+    "title": "TaaSim — Plateforme de mobilité urbaine en temps réel",
+    "type": "Big Data · Streaming",
+    "description": "Plateforme de mobilité urbaine fondée sur une architecture Kappa : ingestion en temps réel, traitement batch, data lake et supervision de bout en bout.",
+    "highlights": [
+      "Ingestion temps réel avec Kafka et Flink",
+      "Traitement batch avec Spark",
+      "Data lake MinIO",
+      "Stockage Cassandra",
+      "Supervision avec Grafana"
+    ],
+    "tags": [
+      "Kafka",
+      "Flink",
+      "Spark",
+      "MinIO",
+      "Cassandra",
+      "Grafana"
+    ],
+    "github": "",
+    "demo": "",
+    "image": "assets/images/projects/taasim.svg",
+    "category": "data",
+    "imageAlt": "Carte nocturne avec trajets de taxis suivis en temps réel"
+  },
+  {
     "title": "Pipeline de Procurement — Réapprovisionnement Automatisé",
     "type": "Data Engineering · Big Data",
-    "description": "Pipeline de données distribué pour automatiser le calcul des besoins de réapprovisionnement à partir des commandes et des niveaux de stock. Le projet met en œuvre une chaîne de traitement basée sur HDFS, Trino, PostgreSQL et Docker.",
+    "description": "Pipeline de données bout en bout pour automatiser le calcul des besoins de réapprovisionnement à partir des commandes et des niveaux de stock, avec des règles métier et des contrôles qualité automatisés. Chaîne de traitement basée sur HDFS, Trino, Hive Metastore, PostgreSQL et Docker Compose.",
     "highlights": [
       "Ingestion et stockage des données avec HDFS",
-      "Transformation et calcul du besoin net avec Trino",
-      "Stockage des résultats dans PostgreSQL",
-      "Environnement conteneurisé avec Docker"
+      "Transformation et calcul du besoin net avec Trino et Hive Metastore",
+      "Règles métier : stock de sécurité, MOQ et conditionnement",
+      "Rapport d'exceptions généré automatiquement",
+      "Environnement conteneurisé avec Docker Compose (6 services)"
     ],
     "tags": [
       "Python",
       "Hadoop / HDFS",
       "Trino",
+      "Hive",
       "PostgreSQL",
       "Docker"
     ],
     "github": "https://github.com/sara-alioui/procurement-pipeline-project",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/procurement-pipeline.svg",
+    "category": "data",
+    "imageAlt": "Schéma du pipeline HDFS, Trino et PostgreSQL"
   },
-
   {
     "title": "Cluster MongoDB Shardé",
     "type": "Big Data · Distributed Systems",
@@ -39,35 +91,34 @@
       "Docker",
       "Distributed Systems"
     ],
-    "github": "https://github.com/sara-alioui",
+    "github": "",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/mongodb-shard-cluster.svg",
+    "category": "data",
+    "imageAlt": "Alvéoles hexagonales : mongos et shards avec replica sets"
   },
-
   {
-    "title": "Gestion des Bons de Commande — Al Omrane",
-    "type": "Web Development · Business Application",
-    "description": "Application web destinée à la gestion et au suivi des bons de commande. La solution centralise la saisie, le contrôle budgétaire et le circuit de validation afin d'améliorer le suivi des engagements et la consommation budgétaire.",
+    "title": "Transformers & Systèmes RAG",
+    "type": "Machine Learning · NLP",
+    "description": "Système de recherche et de synthèse documentaire reposant sur la génération augmentée par récupération (RAG) : recherche sémantique puis génération de la réponse, avec comparaison de plusieurs approches.",
     "highlights": [
-      "Gestion des bons de commande",
-      "Contrôle des plafonds budgétaires",
-      "Workflow de validation hiérarchique",
-      "Tableau de bord de suivi budgétaire",
-      "Génération de documents"
+      "Recherche sémantique avec FAISS et Sentence-Transformers",
+      "Génération avec flan-t5-base",
+      "Comparaison de plusieurs approches RAG"
     ],
     "tags": [
-      "React",
-      "Node.js",
-      "Express",
-      "Prisma",
-      "MySQL",
-      "JWT"
+      "Python",
+      "FAISS",
+      "Sentence-Transformers",
+      "Transformers",
+      "RAG"
     ],
-    "github": "https://github.com/sara-alioui/bc-app",
+    "github": "",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/rag-system.svg",
+    "category": "ml",
+    "imageAlt": "Espace vectoriel avec recherche des voisins les plus proches"
   },
-
   {
     "title": "Plateforme d'Annotation Collaborative NLP",
     "type": "Machine Learning · NLP",
@@ -89,9 +140,10 @@
     ],
     "github": "https://github.com/sara-alioui/annotation-app",
     "demo": "https://drive.google.com/file/d/16KsVzPaeR6tf-ye-A_Ay_YHBSibzw_UT/view?usp=sharing",
-    "image": ""
+    "image": "assets/images/projects/annotation-nlp.svg",
+    "category": "ml",
+    "imageAlt": "Texte annoté avec entités et jauge d'accord inter-annotateurs"
   },
-
   {
     "title": "Book Summarizer — Résumé de livres par IA",
     "type": "Deep Learning · NLP",
@@ -111,9 +163,58 @@
     ],
     "github": "https://github.com/sara-alioui/book-summarizer",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/book-summarizer.svg",
+    "category": "ml",
+    "imageAlt": "Pile de pages condensée en un résumé"
   },
-
+  {
+    "title": "Analyse de Sentiments",
+    "type": "Machine Learning · NLP",
+    "description": "Application de classification de sentiments appliquée à des textes issus des réseaux sociaux. Le projet couvre la préparation des données, l'analyse exploratoire et l'entraînement d'un modèle de classification.",
+    "highlights": [
+      "Prétraitement de données textuelles",
+      "Analyse et préparation du dataset",
+      "Classification des sentiments",
+      "Interface de démonstration de la prédiction"
+    ],
+    "tags": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "NLP",
+      "Tkinter"
+    ],
+    "github": "https://github.com/sara-alioui/sentiment-analysis-web",
+    "demo": "",
+    "image": "assets/images/projects/sentiment-analysis.svg",
+    "category": "ml",
+    "imageAlt": "Trois visages : sentiments positif, neutre et négatif"
+  },
+  {
+    "title": "Gestion des Bons de Commande — Al Omrane",
+    "type": "Web Development · Business Application",
+    "description": "Application web destinée à la gestion et au suivi des bons de commande. La solution centralise la saisie, le contrôle budgétaire et le circuit de validation afin d'améliorer le suivi des engagements et la consommation budgétaire.",
+    "highlights": [
+      "Gestion des bons de commande",
+      "Contrôle des plafonds budgétaires",
+      "Workflow de validation hiérarchique à 4 niveaux",
+      "Tableau de bord de suivi budgétaire",
+      "Génération de documents"
+    ],
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "MySQL",
+      "JWT"
+    ],
+    "github": "https://github.com/sara-alioui/bc-app",
+    "demo": "",
+    "image": "assets/images/projects/bons-de-commande.svg",
+    "category": "dev",
+    "imageAlt": "Bon de commande tamponné validé avec circuit de validation"
+  },
   {
     "title": "Task Manager",
     "type": "Software Engineering · Internship Project",
@@ -135,31 +236,44 @@
     ],
     "github": "https://github.com/sara-alioui/task-manager",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/task-manager.svg",
+    "category": "dev",
+    "imageAlt": "Tableau kanban de post-its"
   },
-
   {
-    "title": "Analyse de Sentiments",
-    "type": "Machine Learning · NLP",
-    "description": "Application de classification de sentiments appliquée à des textes issus des réseaux sociaux. Le projet couvre la préparation des données, l'analyse exploratoire et l'entraînement d'un modèle de classification.",
+    "title": "Gestion des Inscriptions ENSAH",
+    "type": "Software Engineering · Langage C",
+    "description": "Application développée en langage C pour la gestion des inscriptions à l'ENSAH.",
     "highlights": [
-      "Prétraitement de données textuelles",
-      "Analyse et préparation du dataset",
-      "Classification des sentiments",
-      "Interface de démonstration de la prédiction"
+      "Développée en langage C",
+      "Gestion des inscriptions des étudiants"
     ],
     "tags": [
-      "Python",
-      "Pandas",
-      "Scikit-learn",
-      "NLP",
-      "Tkinter"
+      "C"
     ],
-    "github": "https://github.com/sara-alioui/sentiment-analysis-web",
+    "github": "https://github.com/sara-alioui/gestion-inscription-ensah",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/gestion-inscription-ensah.svg",
+    "category": "dev",
+    "imageAlt": "Terminal rétro affichant du code C"
   },
-
+  {
+    "title": "Xou Dou Qi — Jeu de plateau en Java",
+    "type": "Software Engineering · Jeu",
+    "description": "Jeu console Xou Dou Qi (Dou Shou Qi), le « jeu des animaux », développé en Java.",
+    "highlights": [
+      "Jeu console en Java",
+      "Règles du jeu de plateau Dou Shou Qi"
+    ],
+    "tags": [
+      "Java"
+    ],
+    "github": "https://github.com/sara-alioui/xou-dou-qi",
+    "demo": "",
+    "image": "assets/images/projects/xou-dou-qi.svg",
+    "category": "dev",
+    "imageAlt": "Plateau du jeu Dou Shou Qi avec lacs, tanières et pièces"
+  },
   {
     "title": "Système de Gestion Étudiants",
     "type": "Software Engineering",
@@ -180,6 +294,8 @@
     ],
     "github": "",
     "demo": "",
-    "image": ""
+    "image": "assets/images/projects/student-management.svg",
+    "category": "dev",
+    "imageAlt": "Schéma MVC sur une page de cahier"
   }
 ]

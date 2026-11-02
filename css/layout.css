@@ -13,6 +13,12 @@
     background: rgba(10, 13, 24, 0.72);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: background .3s ease, box-shadow .3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(10, 13, 24, 0.9);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
 }
 
 .navbar-inner {
@@ -88,6 +94,7 @@ section {
 }
 
 .hero {
+    position: relative;
     min-height: 100vh;
     padding-top: 8.5rem;
     padding-bottom: 5rem;
@@ -275,22 +282,16 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
 }
 
-.projects-grid > .project-card {
-    grid-column: span 6;
-}
-
-.projects-grid > .project-card:nth-child(1) {
-    grid-column: span 8;
-}
-
-.projects-grid > .project-card:nth-child(2) {
-    grid-column: span 4;
-}
+.projects-grid > .project-card { grid-column: span 2; }
+/* dernière ligne incomplète : cartes centrées, même taille que les autres */
+.projects-grid > .project-card:nth-last-child(2):nth-child(3n+1) { grid-column: 2 / span 2; }
+.projects-grid > .project-card:last-child:nth-child(3n+2) { grid-column: 4 / span 2; }
+.projects-grid > .project-card:last-child:nth-child(3n+1) { grid-column: 3 / span 2; }
 
 .timeline {
     position: relative;
@@ -355,11 +356,20 @@ footer {
         width: 100%;
     }
 
+}
+
+@media (max-width: 1000px) {
     .projects-grid > .project-card,
-    .projects-grid > .project-card:nth-child(1),
-    .projects-grid > .project-card:nth-child(2) {
-        grid-column: span 12;
-    }
+    .projects-grid > .project-card:nth-last-child(2):nth-child(3n+1),
+    .projects-grid > .project-card:last-child:nth-child(3n+2) { grid-column: span 3; }
+    .projects-grid > .project-card:last-child:nth-child(odd) { grid-column: span 6; }
+}
+
+@media (max-width: 680px) {
+    .projects-grid > .project-card,
+    .projects-grid > .project-card:nth-last-child(2):nth-child(3n+1),
+    .projects-grid > .project-card:last-child:nth-child(3n+2),
+    .projects-grid > .project-card:last-child:nth-child(odd) { grid-column: span 6; }
 }
 
 @media (max-width: 760px) {
@@ -390,4 +400,11 @@ footer {
     .hero-title { font-size: clamp(2.8rem, 17vw, 4.2rem); }
     .profile-avatar { width: 145px; height: 145px; }
     .stats-grid { grid-template-columns: 1fr; }
+}
+
+/* --- Corrections mobile --- */
+html { overflow-x: hidden; }
+@media (max-width: 520px) {
+    .hero-title { font-size: clamp(2.3rem, 12.5vw, 3.4rem); line-height: 1.05; }
+    .hero-orbit { display: none; }
 }

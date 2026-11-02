@@ -41,6 +41,23 @@ Ouvre `data/projects.json` et ajoute un bloc comme celui-ci dans le tableau :
 C'est tout — pas besoin de toucher au HTML, la carte s'affiche automatiquement.
 Si un projet n'a pas de démo, laisse `"demo": ""`.
 
+## 🖼️ Image de chaque projet
+
+Chaque projet a une image de couverture dans `assets/images/projects/` (illustrations SVG animées).
+Pour utiliser une vraie capture d'écran à la place, ajoute-la dans ce dossier et change le champ
+`"image"` du projet dans `data/projects.json` (ex. `"image": "assets/images/projects/mon-projet.png"`).
+Format conseillé : 800 × 520 px (ratio 3:2).
+
+Champs d'un projet : `title`, `type`, `description`, `highlights`, `tags`, `github`, `demo`,
+`image`, `imageAlt` et `category` (`data`, `ml` ou `dev` — sert aux filtres).
+
+## ✨ Animations
+
+Barre de progression de lecture, réseau de données animé et texte qui s'écrit dans le hero,
+apparition en cascade des cartes, inclinaison 3D + reflet au survol, filtres de projets,
+fenêtre de détails avec navigation précédent/suivant (flèches du clavier). Tout est désactivé
+automatiquement pour les visiteurs qui ont réglé « réduire les animations ».
+
 ## 🖼️ Images et CV à ajouter
 
 Avant de publier, remplace ces deux fichiers par les tiens (mêmes noms, ou mets à jour les
